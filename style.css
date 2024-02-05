@@ -561,3 +561,21 @@ footer h4 {
 .footer__hr {
     margin: 0px 0px 10px 0px;
 }
+
+.carousel-indicators {
+    bottom: -44px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-image: url(./img/Ellipse.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.carousel-indicators .active {
+    background-image: url(./img/Ellipse_border.png);
+    transition: background-image 0.5s ease-in-out;
+}
