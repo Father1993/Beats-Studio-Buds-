@@ -136,16 +136,16 @@
                 <table class="property__earbuds">
                     <thead>
                         <tr>
-                        <th>Earbuds</th>
+                        <th class="property__title">Earbuds</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td>Height:</td>
+                        <td class="table__description">Height:</td>
                         <td class="table__property">0.59 in / 1.5 cm</td>
                         </tr>
                         <tr>
-                        <td>Weight:</td>
+                        <td class="table__description">Weight:</td>
                         <td class="table__property">5 g</td>
                         </tr>
                     </tbody>
@@ -154,24 +154,24 @@
                 <table class="property__case">
                     <thead>
                         <tr>
-                        <th>Case</th>
+                        <th class="property__title property__case-title">Case</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td>Height:</td>
+                        <td class="table__description">Height:</td>
                         <td class="table__property">1 in / 2.55 cm</td>
                         </tr>
                         <tr>
-                        <td>Weight:</td>
+                        <td class="table__description">Weight:</td>
                         <td class="table__property">48 g</td>
                         </tr>
                         <tr>
-                        <td>Length:</td>
+                        <td class="table__description">Length:</td>
                         <td class="table__property">42.83 in / 7.2 cm</td>
                         </tr>
                         <tr>
-                        <td>Width:</td>
+                        <td class="table__description">Width:</td>
                         <td class="table__property">2 in / 5.1 cm</td>
                         </tr>
                     </tbody>
@@ -183,46 +183,60 @@
         <section class="guarantees">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Элемент аккордеона #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-                    </div>
-                  </div>
+                <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Free shipping in “Country”
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    All purchases are shipped from our warehouse in&nbsp;&laquo;Country&raquo; and are fully insured with a&nbsp;tracking number. Tracked delivery between 2&nbsp;&mdash; 4&nbsp;days in&nbsp;&laquo;Country&raquo; + Free Delivery
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Элемент аккордеона #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-                    </div>
-                  </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Элемент аккордеона #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает переполнение.
-                    </div>
-                  </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    100% money-back guarantee
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    If&nbsp;you&rsquo;re not satisfied with your Case, we&nbsp;offer a&nbsp;100% Money Back Guarantee. No&nbsp;Questions Asked.
                 </div>
-              </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    5 years warranty
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eaque mollitia nulla similique voluptatibus illo at totam velit repellendus non? Eligendi, numquam. Impedit delectus, aliquam officiis suscipit quidem consectetur sequi.
+                </div>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="container-center">
         <h4>What the Experts are Saying</h4>
+        <div>
+            <div class="footer__card">
+                <h6 class="card__title">
+                    “The noise cancellation on these earbuds is easily top tier.”
+                </h6>
+
+                <hr>
+                
+                <a href="#"><img src="./img/Youtube.png" alt="youtube">
+                    @FlossyCarter
+                    Tech Reviewer
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
