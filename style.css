@@ -55,8 +55,7 @@ hr {
 }
 
 .header__logo {
-    margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 3px;
     width: 32px;
     height: 32px;
 }
@@ -66,7 +65,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     height: 48px;
-    padding: 12px;
+    padding: 7px;
+    margin-top: 10px;
 }
 
 .header__nav a {
@@ -89,14 +89,14 @@ hr {
         );
 
     color: #fff;
-    height: 483px;
+    height: 473px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .main__info {
-    padding: 40px 10px 0 10px;
+    padding: 30px 10px 0px 10px;
     background-image: url(./img/beats-studio.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -106,7 +106,6 @@ hr {
 .info__title {
     font-size: 32px;
     line-height: 35.2px;
-    margin-bottom: 10px;
     font-family: "Neuzeit Grotesk";
     font-weight: bold;
 }
@@ -115,7 +114,7 @@ hr {
     font-size: 14px;
     font-weight: 400px;
     line-height: 18.2px;
-    margin-bottom: 10px;
+    margin-bottom: 26px;
 }
 
 .info__price {
@@ -222,7 +221,6 @@ hr {
     font-size: 32px;
     font-weight: 700;
     line-height: 35.2px;
-    margin-bottom: 10px;
 }
 
 .product__description {
@@ -231,7 +229,7 @@ hr {
     font-size: 14px;
     font-weight: 500;
     line-height: 18.5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: rgba(40, 40, 40, 0.8);
 }
 
@@ -281,6 +279,8 @@ hr {
 }
 
 .product__color {
+    margin: 0;
+    margin-bottom: 6px;
     font-family: "Neuzeit Grotesk";
     font-size: 14px;
     line-height: 15.4px;
@@ -311,6 +311,7 @@ hr {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 15px;
+    margin: 0 auto;
 }
 
 .main__timer {
@@ -395,7 +396,7 @@ td {
     color: rgba(40, 40, 40, 0.8);
 }
 
-.property__title {
+.table__title {
     padding: 0;
     padding: 12px 0px 12px 0px;
 }
@@ -407,6 +408,36 @@ td {
 
 .property__case-title {
     padding-bottom: 12px;
+}
+
+.property__title {
+    font-family: "Neuzeit Grotesk";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(40, 40, 40, 1);
+}
+
+.property__desc {
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: rgba(40, 40, 40, 0.8);
+    margin-top: 5px;
+}
+
+.property__img {
+    margin-right: 14px;
+}
+
+.property__hr {
+    width: 340px;
+    height: 2px;
+    background: rgba(220, 220, 220, 1);
+    margin: 20px auto;
 }
 
 .accordion-item {
@@ -471,10 +502,6 @@ td {
     margin-bottom: 50px;
 }
 
-footer {
-    background: rgba(247, 247, 247, 1);
-}
-
 footer h4 {
     padding-top: 15px;
     text-align: center;
@@ -488,7 +515,7 @@ footer h4 {
 
 .footer__card {
     width: 290px;
-    height: 170;
+    height: 170px;
     background-color: #fff;
     border-radius: 30px;
     margin: 0 auto;
@@ -500,4 +527,37 @@ footer h4 {
     font-weight: 400;
     line-height: 18.2px;
     margin-bottom: 43px;
+}
+
+.footer__container {
+    background: rgba(247, 247, 247, 1);
+    border-radius: 30px;
+    height: 266px;
+    margin-bottom: 49px;
+}
+
+.footer__wrapper {
+    height: 170px;
+}
+
+.footer__img {
+    width: 36px;
+    margin-right: 10px;
+    margin-left: 15px;
+    height: 36px;
+}
+
+.footer__link {
+    display: flex;
+    font-family: "Neuzeit Grotesk";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+    width: 170px;
+    color: rgba(40, 40, 40, 1);
+    margin-bottom: 15px;
+}
+
+.footer__hr {
+    margin: 0px 0px 10px 0px;
 }
