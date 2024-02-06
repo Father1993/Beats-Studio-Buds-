@@ -112,7 +112,7 @@ hr {
 
 .info__descr {
     font-size: 14px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 18.2px;
     margin-bottom: 26px;
 }
@@ -194,7 +194,6 @@ hr {
 .my__padding {
     padding-top: 20px;
 }
-
 .product__link {
     display: flex;
     gap: 10px;
@@ -212,6 +211,7 @@ hr {
 
 .product__slider {
     margin-bottom: 24px;
+    height: 500px;
 }
 
 .product__title {
@@ -298,6 +298,27 @@ hr {
     cursor: pointer;
 }
 
+/* Стилизовал бордер на чекбоксах */
+input[type="radio"] {
+    appearance: none;
+}
+
+input[type="radio"]:checked + label {
+    position: relative;
+}
+
+input[type="radio"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border: 1px solid rgba(98, 98, 98, 1);
+    border-radius: 50%;
+}
+
 .product__button {
     width: 100%;
     height: 55px;
@@ -312,6 +333,11 @@ hr {
     text-transform: uppercase;
     margin-bottom: 15px;
     margin: 0 auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product__button:hover {
+    transform: scale(0.97);
 }
 
 .main__timer {
@@ -328,6 +354,7 @@ hr {
     top: 17px;
     right: 30px;
     background-image: url(/img/timer.png);
+    cursor: pointer;
 }
 
 .timer__title {
@@ -335,6 +362,7 @@ hr {
     font-weight: 500;
     line-height: 15.6px;
     color: rgba(246, 93, 129, 1);
+    cursor: pointer;
 }
 
 .timer__time {
@@ -438,6 +466,7 @@ td {
     height: 2px;
     background: rgba(220, 220, 220, 1);
     margin: 20px auto;
+    margin-bottom: -5px;
 }
 
 .accordion-item {
@@ -496,6 +525,45 @@ td {
 .accordion-button:not(.collapsed)::after {
     background-image: none;
     transform: none;
+}
+
+.accordion-header {
+    display: flex;
+    height: 50px;
+}
+
+.accordion-button {
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-family: "Neuzeit Grotesk";
+    font-size: 14px;
+    line-height: 15.4px;
+    font-weight: 700;
+    color: rgba(40, 40, 40, 1);
+    margin-top: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgba(40, 40, 40, 1);
+}
+
+.accordion-image {
+    width: 29px;
+    height: 28px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.accordion-body {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: 400;
+    color: rgba(40, 40, 40, 0.8);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
 }
 
 .guarantees {
@@ -559,7 +627,10 @@ footer h4 {
 }
 
 .footer__hr {
-    margin: 0px 0px 10px 0px;
+    width: 260px;
+    height: 2px;
+    background: rgba(220, 220, 220, 1);
+    margin: 10px auto;
 }
 
 .carousel-indicators {
@@ -578,4 +649,8 @@ footer h4 {
 .carousel-indicators .active {
     background-image: url(./img/Ellipse_border.png);
     transition: background-image 0.5s ease-in-out;
+}
+
+.slider__img {
+    height: 496px;
 }
